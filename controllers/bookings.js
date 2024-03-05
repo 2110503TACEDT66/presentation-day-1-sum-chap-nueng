@@ -99,7 +99,7 @@ if (exitedBookings.length >= 4 && req.user.role !== 'admin') {
    return res.status(400).json({success:false,message:"You cannot book more than 3 nights"});
   }
   const booking = await Booking.create(req.body);
-  res.status(200).json({success:true, data: booking});
+  res.status(201).json({success:true, data: booking});
 
 
 

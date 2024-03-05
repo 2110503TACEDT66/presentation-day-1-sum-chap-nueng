@@ -93,7 +93,7 @@ exports.getCampground=async(req,res,next)=>{
 //@access Private
 exports.createCampground=async(req,res,next)=>{
     const campground = await Campground.create(req.body);
-    res.status(200).json({success:true,data:campground});
+    res.status(201).json({success:true,data:campground});
     // console.log(req.body);
     // res.status(200).json({success:true, msg:`Create a hospital`});
 };
