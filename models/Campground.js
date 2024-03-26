@@ -14,6 +14,10 @@ address:{
   type: String,
   required: [true,'Please add an address']
 
+}, 
+ picture : {
+  type : String,
+  required : [true, 'Please add an address']
 },
  tel:{
     type: String
